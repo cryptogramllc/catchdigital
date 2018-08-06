@@ -1,0 +1,133 @@
+
+@font-face {
+font-family: 'Omnes Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Omnes Regular'), url('/fonts/omnes-regular-webfont.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Omnes ExtraLight';
+font-style: normal;
+font-weight: normal;
+src: local('Omnes ExtraLight'),
+url('/fonts/omnes_extralight-webfont.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Omnes Light';
+font-style: normal;
+font-weight: normal;
+src: local('Omnes Light'),
+ url('/fonts/omnes_light-webfont.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Omnes Medium';
+font-style: normal;
+font-weight: normal;
+src: local('Omnes Medium'),
+url('/fonts/omnes_medium-webfont.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Omnes Semibold';
+font-style: normal;
+font-weight: normal;
+src: local('Omnes Semibold'),
+url('/fonts/omnes-semibold-webfont.woff') format('woff');
+}
+
+*{
+  font-family: 'Omnes Light';
+  padding: 0;
+  margin: 0;
+}
+.main_cont {
+  padding: 30px;
+   .masthead{
+     margin-bottom: 100px;
+     margin-top: 50px;
+   }
+  .cardCont{
+    margin-top: 100px;
+  }
+  h1.headline-1{
+    font-size: 70px;
+    letter-spacing: 6px;
+
+  }
+   .cardTile .cardContent{
+     color: #fff;
+     position: absolute;
+     padding: 20px;
+
+   }
+
+   .cardTile .cardContent h3{
+     font-size: 20px;
+     letter-spacing: 3px;
+     margin-bottom: 15px;
+
+
+   }
+   .cardTile .cardContent h4{
+     font-size: 15px;
+     letter-spacing: 1px;
+
+   }
+
+
+  .cardTile .image{
+    max-height: 270px;
+    width:100%;
+    overflow: hidden;
+
+  }
+  .cardTile .image img {
+      width: 100%;
+  }
+
+  .cardTile {
+    position: relative;
+    margin-top: -10px;
+  }
+
+  .menuIcon{
+    background-image: url('/assets/icon-menu.svg');
+    height: 30px;
+    width:30px;
+    background-size: 30px 33px;
+  }
+
+   .filter {
+     button{
+       font-size: 15px;
+       color: #ccc;
+       margin-top: 20px
+     }
+     .filtersOpt {
+       height: 0px;
+       overflow: hidden;
+
+       -webkit-transition: height 1s; /* Safari */
+      transition: height 1s;
+       &.true {
+         height: 200px;
+       }
+      a{
+        width: 100%;
+        display: inline-block;
+        text-align:center;
+        text-decoration: none;
+        color: #000;
+        padding: 10px;
+       }
+     }
+
+   }
+}
